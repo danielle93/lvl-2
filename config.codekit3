@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25813",
 "files": {
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/index.html",
+		"oF": 0
+		}
 	},
 "hooks": [
 	],
