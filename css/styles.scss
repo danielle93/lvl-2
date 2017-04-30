@@ -1,0 +1,102 @@
+/* Stylehsheet */
+
+@import "semantic";
+html {
+    font-family: 'helvetica';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    background-image: url('../img/purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 10px solid #ff98ff;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 0 20px 4px rgba(255, 116, 228, 0.1), inset 0 0 50px 3px #ff3eff, 0 0 50px 8px #ff3eff, 0 0 10px rgba(255, 0, 216, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    /* account for the height of the clock hands */
+}
+
+.hand {
+    background: #ff98ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    box-shadow: 0 0 50px .3px rgba(255, 116, 228, 0.1), 0 0 10px .3px #ff3eff, 0 0 40px .3px #ff3eff, 0 0 5px rgba(255, 0, 216, 0.2);
+}
+
+.second-hand {
+    width: 50%;
+    height: 1px;
+}
+
+.min-hand {
+    width: 50%;
+    height: 6px;
+}
+
+.hour-hand {
+    width: 40%;
+    height: 6px;
+    margin: 0 23px;
+}
+
+.num {
+    text-shadow: 0 0 50px .3px rgba(255, 116, 228, 0.1), 0 0 10px .3px #ff3eff, 0 0 40px .3px #ff3eff, 0 0 5px rgba(255, 0, 216, 0.2);
+    
+    font-size: 4em;
+    font-weight: 100;
+    color: #ff98ff;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.num.a {
+    justify-content: center;
+    top: 10%;
+}
+
+.num.b {
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+
+.num.c {
+    justify-content: center;
+    top: 88%;
+    
+}
+
+.num.d {
+    justify-content: flex-start;
+    padding-left: 1em;
+}
