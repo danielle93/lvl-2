@@ -157,10 +157,10 @@
 		"iS": 772062,
 		"oA": 0,
 		"oAP": "\/build\/img\/purple.jpg",
-		"oF": 0,
+		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
-		"q": 100
+		"q": 50
 		},
 	"\/index.html": {
 		"ft": 8192,
